@@ -34,8 +34,7 @@ public class TryWithResourceDemo {
 
 	private static int lineCount(BufferedReader reader) throws IOException {
 		int count = 0;
-		String line = null;
-		while ((line = reader.readLine()) != null) {
+		while (reader.readLine() != null) {
 			count++;
 		}
 		return count;
